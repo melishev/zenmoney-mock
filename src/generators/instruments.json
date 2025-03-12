@@ -1,0 +1,1098 @@
+[
+  {
+    "id": 1,
+    "title": "Доллар США",
+    "shortTitle": "USD",
+    "symbol": "$",
+    "rate": 86.5669,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 2,
+    "title": "Российский рубль",
+    "shortTitle": "RUB",
+    "symbol": "руб.",
+    "rate": 1,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 3,
+    "title": "Евро",
+    "shortTitle": "EUR",
+    "symbol": "€",
+    "rate": 93.6639,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 4,
+    "title": "Украинская гривна",
+    "shortTitle": "UAH",
+    "symbol": "грн",
+    "rate": 2.09671,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 5467,
+    "title": "Фунт стерлингов",
+    "shortTitle": "GBP",
+    "symbol": "£",
+    "rate": 111.7059,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 5468,
+    "title": "Турецкая лира",
+    "shortTitle": "TRY",
+    "symbol": "TL",
+    "rate": 2.37243,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 5469,
+    "title": "Молдавский лей",
+    "shortTitle": "MDL",
+    "symbol": "MDL",
+    "rate": 4.81208,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 5470,
+    "title": "Белорусский рубль (до 2016 г.)",
+    "shortTitle": "BYR",
+    "symbol": "BYR",
+    "rate": 0.0029,
+    "changed": 1467369060.078
+  },
+  {
+    "id": 10538,
+    "title": "Азербайджанский манат",
+    "shortTitle": "AZN",
+    "symbol": "AZN",
+    "rate": 50.9217,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 10541,
+    "title": "Армянский драм",
+    "shortTitle": "AMD",
+    "symbol": "֏",
+    "rate": 0.219691,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 10543,
+    "title": "Казахстанский тенге",
+    "shortTitle": "KZT",
+    "symbol": "т",
+    "rate": 0.174939,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 10545,
+    "title": "Киргизский сом",
+    "shortTitle": "KGS",
+    "symbol": "c̲",
+    "rate": 0.98991,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 10546,
+    "title": "Таджикский сомони",
+    "shortTitle": "TJS",
+    "symbol": "TJS",
+    "rate": 7.9063,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 10548,
+    "title": "Узбекский сум",
+    "shortTitle": "UZS",
+    "symbol": "UZS",
+    "rate": 0.00668981,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11149,
+    "title": "Латвийский лат",
+    "shortTitle": "LVL",
+    "symbol": "Ls",
+    "rate": 85.5803,
+    "changed": 1296489202.078
+  },
+  {
+    "id": 11150,
+    "title": "Литовский лит",
+    "shortTitle": "LTL",
+    "symbol": "Lt",
+    "rate": 17.4197,
+    "changed": 1296489202.078
+  },
+  {
+    "id": 11293,
+    "title": "Австралийский доллар",
+    "shortTitle": "AUD",
+    "symbol": "A$",
+    "rate": 54.338,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11294,
+    "title": "Болгарский лев",
+    "shortTitle": "BGN",
+    "symbol": "Lv",
+    "rate": 48.001,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11295,
+    "title": "Бразильский реал",
+    "shortTitle": "BRL",
+    "symbol": "R$",
+    "rate": 14.9441,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11296,
+    "title": "Венгерский форинт",
+    "shortTitle": "HUF",
+    "symbol": "Ft",
+    "rate": 0.235652,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11297,
+    "title": "Вон республики Корея",
+    "shortTitle": "KRW",
+    "symbol": "₩",
+    "rate": 0.0596396,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11298,
+    "title": "Датская крона",
+    "shortTitle": "DKK",
+    "symbol": "kr",
+    "rate": 12.5873,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11299,
+    "title": "Индийская рупия",
+    "shortTitle": "INR",
+    "symbol": "Rs",
+    "rate": 0.9913,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11300,
+    "title": "Канадский доллар",
+    "shortTitle": "CAD",
+    "symbol": "C$",
+    "rate": 59.9868,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11301,
+    "title": "Китайский юань",
+    "shortTitle": "CNY",
+    "symbol": "元",
+    "rate": 11.8458,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11302,
+    "title": "Норвежская крона",
+    "shortTitle": "NOK",
+    "symbol": "kr",
+    "rate": 8.04435,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11303,
+    "title": "Польский злотый",
+    "shortTitle": "PLN",
+    "symbol": "zł",
+    "rate": 22.496,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11304,
+    "title": "Новый румынский лей",
+    "shortTitle": "RON",
+    "symbol": "RON",
+    "rate": 18.952,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11305,
+    "title": "Сингапурский доллар",
+    "shortTitle": "SGD",
+    "symbol": "S$",
+    "rate": 64.9317,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11306,
+    "title": "Новый туркменский манат",
+    "shortTitle": "TMT",
+    "symbol": "m",
+    "rate": 24.7334,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11307,
+    "title": "Чешская крона",
+    "shortTitle": "CZK",
+    "symbol": "Kč",
+    "rate": 3.76509,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11308,
+    "title": "Шведская крона",
+    "shortTitle": "SEK",
+    "symbol": "kr",
+    "rate": 8.55844,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11309,
+    "title": "Швейцарский франк",
+    "shortTitle": "CHF",
+    "symbol": "CHF",
+    "rate": 98.2598,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11310,
+    "title": "Южноафриканский рэнд",
+    "shortTitle": "ZAR",
+    "symbol": "ZAR",
+    "rate": 4.73082,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11311,
+    "title": "Японская иена",
+    "shortTitle": "JPY",
+    "symbol": "¥",
+    "rate": 0.590376,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11519,
+    "title": "Тайский бат",
+    "shortTitle": "THB",
+    "symbol": "฿",
+    "rate": 2.55405,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11525,
+    "title": "Индонезийская рупия",
+    "shortTitle": "IDR",
+    "symbol": "Rp",
+    "rate": 0.00530239,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11526,
+    "title": "Израильский шекель",
+    "shortTitle": "ILS",
+    "symbol": "₪",
+    "rate": 23.4365,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11527,
+    "title": "Никарагуанская кордоба",
+    "shortTitle": "NIO",
+    "symbol": "$",
+    "rate": 2.3271,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11528,
+    "title": "Йеменский риал",
+    "shortTitle": "YER",
+    "symbol": "YER",
+    "rate": 0.347,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11608,
+    "title": "Дирхам ОАЭ",
+    "shortTitle": "AED",
+    "symbol": "Dh",
+    "rate": 23.5717,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11720,
+    "title": "Иорданский динар",
+    "shortTitle": "JOD",
+    "symbol": "JD",
+    "rate": 120.7264,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11727,
+    "title": "Малайзийский ринггит",
+    "shortTitle": "MYR",
+    "symbol": "RM",
+    "rate": 19.4043,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11902,
+    "title": "Вьетнамский донг",
+    "shortTitle": "VND",
+    "symbol": "VND",
+    "rate": 0.00349582,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 11963,
+    "title": "Новозеландский доллар",
+    "shortTitle": "NZD",
+    "symbol": "NZ$",
+    "rate": 49.2696,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12035,
+    "title": "Иранский риал",
+    "shortTitle": "IRR",
+    "symbol": "IR",
+    "rate": 0.002,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12070,
+    "title": "Приднестровский рубль",
+    "shortTitle": "PRB",
+    "symbol": "PRB",
+    "rate": 5.3763,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12073,
+    "title": "Гонконгский доллар",
+    "shortTitle": "HKD",
+    "symbol": "HK$",
+    "rate": 11.1613,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12130,
+    "title": "Колумбийское песо",
+    "shortTitle": "COP",
+    "symbol": "$",
+    "rate": 0.0205,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12156,
+    "title": "Новый тайваньский доллар",
+    "shortTitle": "TWD",
+    "symbol": "NT$",
+    "rate": 2.604,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12222,
+    "title": "Хорватская куна",
+    "shortTitle": "HRK",
+    "symbol": "Kn",
+    "rate": 12.4052,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12223,
+    "title": "Конвертируемая марка",
+    "shortTitle": "BAM",
+    "symbol": "KM",
+    "rate": 47.7485,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12225,
+    "title": "Грузинский лари",
+    "shortTitle": "GEL",
+    "symbol": "₾",
+    "rate": 31.1773,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12226,
+    "title": "Исландская крона",
+    "shortTitle": "ISK",
+    "symbol": "kr",
+    "rate": 0.6362,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12227,
+    "title": "Македонский денар",
+    "shortTitle": "MKD",
+    "symbol": "ден.",
+    "rate": 1.5191,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12228,
+    "title": "Аргентинское песо",
+    "shortTitle": "ARS",
+    "symbol": "$",
+    "rate": 0.0804,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12229,
+    "title": "Сербский динар",
+    "shortTitle": "RSD",
+    "symbol": "din.",
+    "rate": 0.801516,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12230,
+    "title": "Филиппинское песо",
+    "shortTitle": "PHP",
+    "symbol": "₱",
+    "rate": 1.4914,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12231,
+    "title": "Чилийское песо",
+    "shortTitle": "CLP",
+    "symbol": "$",
+    "rate": 0.0913,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12232,
+    "title": "Шри-ланкийская рупия",
+    "shortTitle": "LKR",
+    "symbol": "Rs",
+    "rate": 0.2899,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12233,
+    "title": "Доминиканское песо",
+    "shortTitle": "DOP",
+    "symbol": "RD$",
+    "rate": 1.3673,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12234,
+    "title": "Египетский фунт",
+    "shortTitle": "EGP",
+    "symbol": "LE",
+    "rate": 1.71051,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12235,
+    "title": "Биткойн",
+    "shortTitle": "BTC",
+    "symbol": "μBTC",
+    "rate": 7.0947,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12236,
+    "title": "Кувейтский динар",
+    "shortTitle": "KWD",
+    "symbol": "KD",
+    "rate": 277.9613,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12238,
+    "title": "Гватемальский кетсаль",
+    "shortTitle": "GTQ",
+    "symbol": "Q",
+    "rate": 11.1083,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12239,
+    "title": "Лаосский кип",
+    "shortTitle": "LAK",
+    "symbol": "LAK",
+    "rate": 0.004,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12241,
+    "title": "Камбоджийский риель",
+    "shortTitle": "KHR",
+    "symbol": "KHR",
+    "rate": 0.0214,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12242,
+    "title": "Мексиканское песо",
+    "shortTitle": "MXN",
+    "symbol": "MXN",
+    "rate": 4.2238,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12243,
+    "title": "Белорусский рубль",
+    "shortTitle": "BYN",
+    "symbol": "BYN",
+    "rate": 26.1686,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12244,
+    "title": "Монгольский тугрик",
+    "shortTitle": "MNT",
+    "symbol": "MNT",
+    "rate": 0.0252,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12245,
+    "title": "Танзанийский шиллинг",
+    "shortTitle": "TZS",
+    "symbol": "TZS",
+    "rate": 0.0324,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12246,
+    "title": "Саудовский риал",
+    "shortTitle": "SAR",
+    "symbol": "S.R",
+    "rate": 22.8325,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12247,
+    "title": "Гондурасская Лемпира",
+    "shortTitle": "HNL",
+    "symbol": "HNL",
+    "rate": 3.3487,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12248,
+    "title": "Коста-риканский Колон",
+    "shortTitle": "CRC",
+    "symbol": "CRC",
+    "rate": 0.1704,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12249,
+    "title": "Оманский риал",
+    "shortTitle": "OMR",
+    "symbol": "OMR",
+    "rate": 222.4125,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12250,
+    "title": "Перуанский новый соль",
+    "shortTitle": "PEN",
+    "symbol": "PEN",
+    "rate": 23.3322,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12251,
+    "title": "Сейшельская рупия",
+    "shortTitle": "SCR",
+    "symbol": "SR",
+    "rate": 5.9568,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12252,
+    "title": "Ethereum",
+    "shortTitle": "ETH",
+    "symbol": "μETH",
+    "rate": 0.1644,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12253,
+    "title": "Ripple",
+    "shortTitle": "XRP",
+    "symbol": "XRP",
+    "rate": 185.5715,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12254,
+    "title": "LiteCoin",
+    "shortTitle": "LTC",
+    "symbol": "μLTC",
+    "rate": 0.0077,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12255,
+    "title": "Dash",
+    "shortTitle": "DASH",
+    "symbol": "μDASH",
+    "rate": 0.0019,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12256,
+    "title": "Monero",
+    "shortTitle": "XMR",
+    "symbol": "μXMR",
+    "rate": 0.0188,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12257,
+    "title": "Золото (граммы)",
+    "shortTitle": "A98",
+    "symbol": "AUR",
+    "rate": 8027.0237,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12258,
+    "title": "Серебро (граммы)",
+    "shortTitle": "A99",
+    "symbol": "ARG",
+    "rate": 90.4395,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12259,
+    "title": "Платина (граммы)",
+    "shortTitle": "A76",
+    "symbol": "PTR",
+    "rate": 2699.179,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12260,
+    "title": "Непальская рупия",
+    "shortTitle": "NPR",
+    "symbol": "NPR",
+    "rate": 0.6138,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12261,
+    "title": "Марокканский дирхам",
+    "shortTitle": "MAD",
+    "symbol": "MAD",
+    "rate": 8.8542,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12262,
+    "title": "Албанский лек",
+    "shortTitle": "ALL",
+    "symbol": "ALL",
+    "rate": 0.9388,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12263,
+    "title": "Нигерийская найра",
+    "shortTitle": "NGN",
+    "symbol": "NGN",
+    "rate": 0.0558,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12264,
+    "title": "Катарский риал",
+    "shortTitle": "QAR",
+    "symbol": "QAR",
+    "rate": 23.7821,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12266,
+    "title": "Мальдивская руфия",
+    "shortTitle": "MVR",
+    "symbol": "MVR",
+    "rate": 5.5605,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12267,
+    "title": "Тунисский динар",
+    "shortTitle": "TND",
+    "symbol": "TND",
+    "rate": 27.7597,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12268,
+    "title": "Мьянманский Кьят",
+    "shortTitle": "MMK",
+    "symbol": "MMK",
+    "rate": 0.0408,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12269,
+    "title": "Парагвайский Гуарани",
+    "shortTitle": "PYG",
+    "symbol": "PYG",
+    "rate": 0.0108,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12270,
+    "title": "Ямайский доллар",
+    "shortTitle": "JMD",
+    "symbol": "JMD",
+    "rate": 0.5449,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12271,
+    "title": "Маврикийская рупия",
+    "shortTitle": "MUR",
+    "symbol": "MUR",
+    "rate": 1.8995,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12272,
+    "title": "Ангольская кванза",
+    "shortTitle": "AOA",
+    "symbol": "AOA",
+    "rate": 0.0939,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12273,
+    "title": "Палладий (граммы)",
+    "shortTitle": "A33",
+    "symbol": "PDR",
+    "rate": 2597.1007,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12274,
+    "title": "Эфиопский быр",
+    "shortTitle": "ETB",
+    "symbol": "ETB",
+    "rate": 0.656,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12275,
+    "title": "Бахрейнский динар",
+    "shortTitle": "BHD",
+    "symbol": "BHD",
+    "rate": 227.2049,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12276,
+    "title": "Боливиано",
+    "shortTitle": "BOB",
+    "symbol": "BOB",
+    "rate": 12.3937,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12277,
+    "title": "Суверенный боливар",
+    "shortTitle": "VES",
+    "symbol": "VES",
+    "rate": 1.3208,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12278,
+    "title": "Уругвайское песо",
+    "shortTitle": "UYU",
+    "symbol": "UYU",
+    "rate": 2.0258,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12279,
+    "title": "Панамский бальбоа",
+    "shortTitle": "PAB",
+    "symbol": "PAB",
+    "rate": 85.6312,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12280,
+    "title": "Кубинское песо",
+    "shortTitle": "CUP",
+    "symbol": "CUP",
+    "rate": 3.3255,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12281,
+    "title": "Кубинское конвертируемое песо",
+    "shortTitle": "CUC",
+    "symbol": "CUC",
+    "rate": 85.6312,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12282,
+    "title": "Алжирский динар",
+    "shortTitle": "DZD",
+    "symbol": "DZD",
+    "rate": 0.6419,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12283,
+    "title": "Мозамбикский метикал",
+    "shortTitle": "MZN",
+    "symbol": "MZN",
+    "rate": 1.3399,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12284,
+    "title": "Восточнокарибский доллар",
+    "shortTitle": "XCD",
+    "symbol": "XCD",
+    "rate": 31.6854,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12285,
+    "title": "Гвинейский франк",
+    "shortTitle": "GNF",
+    "symbol": "GNF",
+    "rate": 0.0099,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12286,
+    "title": "Ливанский фунт",
+    "shortTitle": "LBP",
+    "symbol": "LBP",
+    "rate": 0.001,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12287,
+    "title": "Доллар Фиджи",
+    "shortTitle": "FJD",
+    "symbol": "FJD",
+    "rate": 37.2999,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12288,
+    "title": "Кенийский шиллинг",
+    "shortTitle": "KES",
+    "symbol": "KES",
+    "rate": 0.6597,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12289,
+    "title": "Бангладешский така",
+    "shortTitle": "BDT",
+    "symbol": "BDT",
+    "rate": 0.7049,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12290,
+    "title": "Макао патака",
+    "shortTitle": "MOP",
+    "symbol": "MOP",
+    "rate": 10.7005,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12291,
+    "title": "Южносуданский фунт",
+    "shortTitle": "SSP",
+    "symbol": "SSP",
+    "rate": 0.6574,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12292,
+    "title": "Пакистанская рупия",
+    "shortTitle": "PKR",
+    "symbol": "Rs",
+    "rate": 0.306,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12293,
+    "title": "Доллар Намибии",
+    "shortTitle": "NAD",
+    "symbol": "NAD",
+    "rate": 4.6886,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12294,
+    "title": "Барбадосский доллар",
+    "shortTitle": "BBD",
+    "symbol": "BBD",
+    "rate": 42.8156,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12295,
+    "title": "Франк КФА BCEAO",
+    "shortTitle": "XOF",
+    "symbol": "₣",
+    "rate": 0.1425,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12296,
+    "title": "Брунейский доллар",
+    "shortTitle": "BND",
+    "symbol": "BND",
+    "rate": 64.2883,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12297,
+    "title": "Замбийская квача",
+    "shortTitle": "ZMW",
+    "symbol": "K",
+    "rate": 2.9949,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12298,
+    "title": "Биткойн Кэш",
+    "shortTitle": "BCH",
+    "symbol": "μBCH",
+    "rate": 0.0288,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12299,
+    "title": "Иракский динар",
+    "shortTitle": "IQD",
+    "symbol": "IQD",
+    "rate": 0.0654,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12300,
+    "title": "Доллар Зимбабве",
+    "shortTitle": "ZWL",
+    "symbol": "ZWL",
+    "rate": 0.2659,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12301,
+    "title": "Французский тихоокеанский франк",
+    "shortTitle": "XPF",
+    "symbol": "XPF",
+    "rate": 0.7832,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12302,
+    "title": "Афганистанский афгани",
+    "shortTitle": "AFN",
+    "symbol": "AFN",
+    "rate": 1.1814,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12303,
+    "title": "Багамский доллар",
+    "shortTitle": "BSD",
+    "symbol": "BSD",
+    "rate": 85.6312,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12304,
+    "title": "Боснийский динар (до 1998 г.)",
+    "shortTitle": "BAD",
+    "symbol": "BAD",
+    "rate": 43.5258,
+    "changed": 1632918341.078
+  },
+  {
+    "id": 12305,
+    "title": "Угандийский шиллинг",
+    "shortTitle": "UGX",
+    "symbol": "UGX",
+    "rate": 0.0233,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12306,
+    "title": "Папуа - Новая Гвинея кина",
+    "shortTitle": "PGK",
+    "symbol": "PGK",
+    "rate": 20.9716,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12307,
+    "title": "Toncoin",
+    "shortTitle": "TON",
+    "symbol": "TON",
+    "rate": 229.4023,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12308,
+    "title": "Tether",
+    "shortTitle": "USDT",
+    "symbol": "USDT",
+    "rate": 85.5989,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12309,
+    "title": "Ганский седи",
+    "shortTitle": "GHS",
+    "symbol": "₵",
+    "rate": 5.5252,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12310,
+    "title": "TRON",
+    "shortTitle": "TRX",
+    "symbol": "TRX",
+    "rate": 19.2024,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12311,
+    "title": "Solana",
+    "shortTitle": "SOL",
+    "symbol": "μSOL",
+    "rate": 0.0107,
+    "changed": 1741740303.078
+  },
+  {
+    "id": 12312,
+    "title": "Notcoin",
+    "shortTitle": "NOT",
+    "symbol": "NOT",
+    "rate": 0.1742,
+    "changed": 1741740303.078
+  }
+]
