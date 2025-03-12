@@ -1,93 +1,125 @@
-/**
- * Типы сущностей для генератора мок-данных
- */
-
 export interface User {
   id: number
+  country: number
+  login: string | null
+  parent: number | null
+  countryCode: string
+  email: string
   changed: number
-  login?: string
   currency: number
-  parent?: number
+  paidTill: number
+  monthStartDay: number
+  isForecastEnabled: boolean
+  planBalanceMode: string
+  planSettings: string
+  subscription: string
+  subscriptionRenewalDate: null
 }
 
 export interface Account {
   id: string
-  changed: number
   user: number
-  role?: number
   instrument: number
-  company?: number
   type: string
-  title: string
-  balance: number
-  syncID?: string[]
+  role: null
+  private: boolean
   savings: boolean
+  title: string
+  inBalance: boolean
+  creditLimit: number
+  startBalance: number
+  balance: number
+  company: number | null
+  archive: boolean
+  enableCorrection: boolean
+  balanceCorrectionType: string
+  startDate: string | null
+  capitalization: boolean | null
+  percent: number | null
+  changed: number
+  syncID: string[] | null
+  enableSMS: boolean
+  endDateOffset: number | null
+  endDateOffsetInterval: string | null
+  payoffStep: number | null
+  payoffInterval: string | null
 }
 
 export interface Category {
   id: string
-  changed: number
   user: number
-  title: string
-  parent?: string
-  color?: number
-  showIncome: boolean
-  showOutcome: boolean
+  changed: number
+  icon: string
   budgetIncome: boolean
   budgetOutcome: boolean
+  required: boolean | null
+  color: number | null
+  picture: null
+  title: string
+  showIncome: boolean
+  showOutcome: boolean
+  parent: string | null
+  staticId: string | null
 }
 
 export interface Instrument {
   id: number
-  changed: number
   title: string
-  shortTitle: string
+  shortTitle?: string
   symbol: string
   rate: number
+  changed: number
 }
 
 export interface Merchant {
   id: string
-  changed: number
   user: number
   title: string
+  changed: number
 }
 
 export interface Organization {
   id: number
-  changed: number
   title: string
-  fullTitle: string
-  www?: string
-  country?: string
+  www: string | null
+  country: number | null
+  fullTitle: string | null
+  changed: number
+  deleted: boolean
+  countryCode: string | null
 }
 
 export interface Transaction {
   id: string
-  changed: number
-  created: number
   user: number
-  deleted: boolean
-  incomeInstrument: number
-  incomeAccount: string
-  income: number
-  outcomeInstrument: number
-  outcomeAccount: string
-  outcome: number
-  tag?: string[]
-  merchant?: string
-  payee?: string
-  originalPayee?: string
-  comment?: string
   date: string
-  mcc?: number
-  reminderMarker?: string
-  opIncome?: number
-  opIncomeInstrument?: number
-  opOutcome?: number
-  opOutcomeInstrument?: number
-  latitude?: number
-  longitude?: number
+  income: number
+  outcome: number
+  changed: number
+  incomeInstrument: number
+  outcomeInstrument: number
+  created: number
+  originalPayee: string | null
+  deleted: boolean
+  viewed: boolean
+  hold: boolean | null
+  qrCode: string | null
+  source: string | null
+  incomeAccount: string
+  outcomeAccount: string
+  tag: string[] | null
+  comment: string | null
+  payee: string | null
+  opIncome: number | null
+  opOutcome: number | null
+  opIncomeInstrument: null
+  opOutcomeInstrument: null
+  latitude: null
+  longitude: null
+  merchant: string | null
+  incomeBankID: string | null
+  outcomeBankID: string | null
+  reminderMarker: string | null
 }
 
 export interface ZMDiffResponse {
@@ -103,4 +135,4 @@ export interface ZMDiffResponse {
   tag: Category[]
   transaction: Transaction[]
   user: User[]
-} 
+}
