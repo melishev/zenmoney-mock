@@ -4,16 +4,14 @@
 
 ## Установка
 
-```bash
-npm install zenmoney-mock
-```
+Рекомендуется использовать этот проект в качестве Git submodule, что позволит оперативно вносить изменения при необходимости:
 
 ## Использование
 
 ### Базовое использование
 
 ```typescript
-import { MockDataGenerator } from 'zenmoney-mock';
+import { MockDataGenerator } from './zenmoney-mock/src';
 
 // Создание генератора с параметрами по умолчанию
 const generator = new MockDataGenerator();
@@ -29,7 +27,7 @@ console.log(mockData.account);
 ### Настройка генерации
 
 ```typescript
-import { MockDataGenerator } from 'zenmoney-mock';
+import { MockDataGenerator } from './zenmoney-mock/src';
 
 // Создание генератора с пользовательскими параметрами
 const generator = new MockDataGenerator({
@@ -64,6 +62,14 @@ generator.saveToJson('my-mock-data.json');
 | instrumentsCount | Количество валют | 5 |
 | merchantsPerUser | Количество получателей на пользователя | 8 |
 | companiesCount | Количество банков/компаний | 3 |
+
+## Внесение изменений
+
+Поскольку проект используется как Git submodule, вы можете легко вносить правки и дополнения:
+
+1. Внесите необходимые изменения в код
+2. Отправьте изменения в репозиторий
+3. Обновите submodule в основном проекте
 
 ## Лицензия
 
