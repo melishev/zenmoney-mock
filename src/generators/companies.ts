@@ -1,24 +1,16 @@
-import { faker } from '@faker-js/faker'
-
 import type { Organization } from '../entities'
+import companiesData from './companies.json'
 
 /**
- * Генерирует список компаний (банков)
+ * Возвращает список компаний (банков) из предварительно загруженных данных
+ * При необходимости можно ограничить количество возвращаемых компаний
  */
-export function generateCompanies(count: number): Organization[] {
-  const companies: Organization[] = []
-
-  for (let i = 0; i < count; i++) {
-    const companyName = faker.company.name()
-    companies.push({
-      id: i + 1,
-      changed: Date.now(),
-      title: companyName,
-      fullTitle: `${companyName} ${faker.company.buzzPhrase()}`,
-      www: faker.internet.url(),
-      country: faker.location.country(),
-    })
+export function generateCompanies(count?: number): Organization[] {
+  // Если count не указан или больше количества имеющихся компаний, вернуть все компании
+  if (!count || count >= companiesData.length) {
+    return companiesData as Organization[]
   }
 
-  return companies
+  // В противном случае вернуть только указанное количество компаний
+  return companiesData.slice(0, count) as Organization[]
 }
