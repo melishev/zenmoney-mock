@@ -1,11 +1,3 @@
-import { generateAccounts } from './generators/accounts'
-import { generateCategories } from './generators/categories'
-import { generateCompanies } from './generators/companies'
-import { generateInstruments } from './generators/instruments'
-import { generateMerchants } from './generators/merchants'
-import { generateTransactions } from './generators/transactions'
-import { generateUsers } from './generators/users'
-import type { MockDataOptions } from './types'
 import type {
   Account,
   Category,
@@ -14,8 +6,16 @@ import type {
   Organization,
   Transaction,
   User,
-  ZMDiffResponse
+  ZMDiffResponse,
 } from './entities'
+import { generateAccounts } from './generators/accounts'
+import { generateCategories } from './generators/categories'
+import { generateCompanies } from './generators/companies'
+import { generateInstruments } from './generators/instruments'
+import { generateMerchants } from './generators/merchants'
+import { generateTransactions } from './generators/transactions'
+import { generateUsers } from './generators/users'
+import type { MockDataOptions } from './types'
 
 /**
  * Генератор мок-данных для финансового приложения
