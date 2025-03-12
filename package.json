@@ -1,0 +1,39 @@
+{
+  "name": "zenmoney-mock",
+  "version": "1.0.0",
+  "description": "Mock data generator for ZenMoney API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melishev/zenmoney-mock.git"
+  },
+  "keywords": [
+    "zenmoney",
+    "mock",
+    "generator",
+    "data",
+    "testing"
+  ],
+  "author": "Matvey Melishev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melishev/zenmoney-mock/issues"
+  },
+  "homepage": "https://github.com/melishev/zenmoney-mock#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
