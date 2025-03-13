@@ -36,8 +36,7 @@ const generator = new MockDataGenerator({
   categoriesPerUser: 12,
   transactionsPerUser: 50,
   instrumentsCount: 10,
-  merchantsPerUser: 15,
-  companiesCount: 5
+  merchantsPerUser: 15
 });
 
 // Генерация данных

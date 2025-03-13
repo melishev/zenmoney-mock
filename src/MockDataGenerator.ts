@@ -47,7 +47,7 @@ export class MockDataGenerator {
    */
   public generate(): ZMDiffResponse {
     this.instruments = generateInstruments(this.options.instrumentsCount)
-    this.companies = generateCompanies(this.options.companiesCount)
+    this.companies = generateCompanies()
     this.users = generateUsers(this.options.usersCount, this.instruments)
     this.accounts = generateAccounts(this.users, this.instruments, this.companies, this.options.accountsPerUser)
     this.categories = generateCategories(this.users, this.options.categoriesPerUser)
