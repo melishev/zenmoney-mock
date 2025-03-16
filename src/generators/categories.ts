@@ -42,21 +42,24 @@ export function generateCategories(users: User[], categoriesPerUser: number): Ca
     '9014_percentage', // Проценты
   ]
 
-  /**
-   * Генерирует цвет в формате ARGB
-   * color = (a << 24) + (r << 16) + (g << 8) + (b << 0)
-   */
-  function generateColor(): number {
-    const a = 255 // Полная непрозрачность
-    const r = faker.number.int({ min: 0, max: 255 })
-    const g = faker.number.int({ min: 0, max: 255 })
-    const b = faker.number.int({ min: 0, max: 255 })
-
-    return (a << 24) + (r << 16) + (g << 8) + (b << 0)
-  }
-
-  // Генерируем набор уникальных цветов для использования в категориях
-  const predefinedColors: number[] = Array.from({ length: 15 }, () => generateColor())
+  // Предопределенные цвета в формате ARGB
+  const predefinedColors: number[] = [
+    0xfff5f5fa, // Светло-серый
+    0xffe15e44, // Красно-оранжевый
+    0xffec9235, // Оранжевый
+    0xfff1be41, // Желтый
+    0xff89cf80, // Светло-зеленый
+    0xff5fa454, // Зеленый
+    0xff4a7e75, // Бирюзовый
+    0xff59b3f0, // Голубой
+    0xff3062b6, // Синий
+    0xff7c67d4, // Фиолетовый
+    0xff9030aa, // Пурпурный
+    0xffbc3e76, // Розовый
+    0xffd98aaf, // Светло-розовый
+    0xff919299, // Серый
+    0xff414141, // Темно-серый
+  ]
 
   users.forEach((user) => {
     // Создаем родительские категории
@@ -64,7 +67,9 @@ export function generateCategories(users: User[], categoriesPerUser: number): Ca
     const parentCategoriesCount = Math.min(categoriesPerUser / 2, 5)
 
     for (let i = 0; i < parentCategoriesCount; i++) {
-      const categoryColor = faker.helpers.arrayElement(predefinedColors)
+      // 35% шанс того, что категория будет иметь цвет
+      const shouldHaveColor = faker.number.int({ min: 1, max: 100 }) <= 35
+      const categoryColor = shouldHaveColor ? faker.helpers.arrayElement(predefinedColors) : null
 
       const category: Category = {
         id: crypto.randomUUID(),
@@ -90,6 +95,9 @@ export function generateCategories(users: User[], categoriesPerUser: number): Ca
     // Создаем подкатегории
     for (let i = 0; i < categoriesPerUser - parentCategoriesCount; i++) {
       const parentCategory = faker.helpers.arrayElement(parentCategories)
+      // Для подкатегорий также 35% шанс получить цвет, если у родительской категории нет цвета
+      const shouldHaveColor = parentCategory.color === null && faker.number.int({ min: 1, max: 100 }) <= 35
+      const categoryColor = shouldHaveColor ? faker.helpers.arrayElement(predefinedColors) : parentCategory.color
 
       categories.push({
         id: crypto.randomUUID(),
@@ -99,7 +107,7 @@ export function generateCategories(users: User[], categoriesPerUser: number): Ca
         budgetIncome: parentCategory.budgetIncome,
         budgetOutcome: parentCategory.budgetOutcome,
         required: faker.datatype.boolean(),
-        color: parentCategory.color, // Используем тот же цвет, что и у родительской категории
+        color: categoryColor,
         picture: null,
         title: faker.commerce.productName(),
         showIncome: parentCategory.showIncome,

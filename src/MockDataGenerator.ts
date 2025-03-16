@@ -35,7 +35,7 @@ export class MockDataGenerator {
       usersCount: options.usersCount || 2,
       accountsPerUser: options.accountsPerUser || 3,
       categoriesPerUser: options.categoriesPerUser || 10,
-      transactionsPerUser: options.transactionsPerUser || 30,
+      transactionsPerUser: options.transactionsPerUser || 365,
       instrumentsCount: options.instrumentsCount || 5,
       merchantsPerUser: options.merchantsPerUser || 8,
       companiesCount: options.companiesCount || 3,

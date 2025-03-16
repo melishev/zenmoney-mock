@@ -35,8 +35,10 @@ export function generateTransactions(
 
       const amount = faker.number.float({ min: 10, max: 50000, fractionDigits: 2 })
 
-      // Генерируем дату в формате 'YYYY-MM-DD'
-      const recentDate = faker.date.recent({ days: 30 })
+      // Генерируем дату в пределах последнего года
+      const oneYearAgo = new Date()
+      oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1)
+      const recentDate = faker.date.between({ from: oneYearAgo, to: new Date() })
       const date = recentDate.toISOString().split('T')[0] // Формат 'YYYY-MM-DD'
 
       // Для поля tag используем реальные категории пользователя
