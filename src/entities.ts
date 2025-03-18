@@ -45,7 +45,7 @@ export interface Account {
   payoffInterval: string | null
 }
 
-export interface Category {
+export interface Tag {
   id: string
   user: number
   changed: number
@@ -132,7 +132,7 @@ export interface ZMDiffResponse {
   reminder: any[]
   reminderMarker: any[]
   serverTimestamp: number
-  tag: Category[]
+  tag: Tag[]
   transaction: Transaction[]
   user: User[]
 }

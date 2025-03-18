@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker'
 
-import type { Account, Category, Merchant, Transaction, User } from '../entities'
+import type { Account, Merchant, Tag, Transaction, User } from '../entities'
 
 /**
  * Генерирует список транзакций
@@ -9,14 +9,14 @@ export function generateTransactions(
   users: User[],
   accounts: Account[],
   merchants: Merchant[],
-  categories: Category[],
+  tags: Tag[],
   transactionsPerUser: number,
 ): Transaction[] {
   const transactions: Transaction[] = []
 
   users.forEach((user) => {
     const userAccounts = accounts.filter((account) => account.user === user.id)
-    const userCategories = categories.filter((category) => category.user === user.id)
+    const userTags = tags.filter((tag) => tag.user === user.id)
     const userMerchants = merchants.filter((merchant) => merchant.user === user.id)
 
     for (let i = 0; i < transactionsPerUser; i++) {
@@ -41,28 +41,28 @@ export function generateTransactions(
       const recentDate = faker.date.between({ from: oneYearAgo, to: new Date() })
       const date = recentDate.toISOString().split('T')[0] // Формат 'YYYY-MM-DD'
 
-      // Для поля tag используем реальные категории пользователя
-      // В 70% случаев будет одна категория, в 20% - две, в 10% - null
+      // Для поля tag используем реальные тэги пользователя
+      // В 70% случаев будет один тэг, в 20% - два, в 10% - null
       let tagsArray: string[] | null = null
 
-      if (userCategories.length > 0) {
+      if (userTags.length > 0) {
         const tagChance = faker.number.int({ min: 1, max: 10 })
 
         if (tagChance <= 7) {
-          // 70% случаев - одна категория
-          tagsArray = [faker.helpers.arrayElement(userCategories).id]
-        } else if (tagChance <= 9 && userCategories.length >= 2) {
-          // 20% случаев - две категории (если есть хотя бы 2 категории)
-          const firstCategory = faker.helpers.arrayElement(userCategories)
-          let secondCategory
+          // 70% случаев - один тэг
+          tagsArray = [faker.helpers.arrayElement(userTags).id]
+        } else if (tagChance <= 9 && userTags.length >= 2) {
+          // 20% случаев - два тэга (если есть хотя бы 2 тэга)
+          const firstTag = faker.helpers.arrayElement(userTags)
+          let secondTag
 
           do {
-            secondCategory = faker.helpers.arrayElement(userCategories)
-          } while (secondCategory.id === firstCategory.id)
+            secondTag = faker.helpers.arrayElement(userTags)
+          } while (secondTag.id === firstTag.id)
 
-          tagsArray = [firstCategory.id, secondCategory.id]
+          tagsArray = [firstTag.id, secondTag.id]
         }
-        // 10% случаев - null (отсутствие категории)
+        // 10% случаев - null (отсутствие тэга)
       }
 
       const transaction: Transaction = {

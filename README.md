@@ -33,7 +33,7 @@ import { MockDataGenerator } from './zenmoney-mock/src';
 const generator = new MockDataGenerator({
   usersCount: 5,
   accountsPerUser: 4,
-  categoriesPerUser: 12,
+  tagsPerUser: 12,
   transactionsPerUser: 50,
   instrumentsCount: 10,
   merchantsPerUser: 15
@@ -56,7 +56,7 @@ generator.saveToJson('my-mock-data.json');
 |----------|----------|----------------------|
 | usersCount | Количество пользователей | 2 |
 | accountsPerUser | Количество счетов на пользователя | 3 |
-| categoriesPerUser | Количество категорий на пользователя | 10 |
+| tagsPerUser | Количество тэгов на пользователя | 10 |
 | transactionsPerUser | Количество транзакций на пользователя | 30 |
 | instrumentsCount | Количество валют | 5 |
 | merchantsPerUser | Количество получателей на пользователя | 8 |

@@ -8,9 +8,9 @@ export * from './types'
 
 // Экспорт отдельных генераторов
 export * from './generators/accounts'
-export * from './generators/categories'
 export * from './generators/companies'
 export * from './generators/instruments'
 export * from './generators/merchants'
+export * from './generators/tags'
 export * from './generators/transactions'
 export * from './generators/users'

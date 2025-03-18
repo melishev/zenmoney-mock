@@ -1,18 +1,9 @@
-import type {
-  Account,
-  Category,
-  Instrument,
-  Merchant,
-  Organization,
-  Transaction,
-  User,
-  ZMDiffResponse,
-} from './entities'
+import type { Account, Instrument, Merchant, Organization, Tag, Transaction, User, ZMDiffResponse } from './entities'
 import { generateAccounts } from './generators/accounts'
-import { generateCategories } from './generators/categories'
 import { generateCompanies } from './generators/companies'
 import { generateInstruments } from './generators/instruments'
 import { generateMerchants } from './generators/merchants'
+import { generateTags } from './generators/tags'
 import { generateTransactions } from './generators/transactions'
 import { generateUsers } from './generators/users'
 import type { MockDataOptions } from './types'
@@ -24,7 +15,7 @@ export class MockDataGenerator {
   private readonly options: Required<MockDataOptions>
   private users: User[] = []
   private accounts: Account[] = []
-  private categories: Category[] = []
+  private tags: Tag[] = []
   private transactions: Transaction[] = []
   private instruments: Instrument[] = []
   private merchants: Merchant[] = []
@@ -34,7 +25,7 @@ export class MockDataGenerator {
     this.options = {
       usersCount: options.usersCount || 2,
       accountsPerUser: options.accountsPerUser || 3,
-      categoriesPerUser: options.categoriesPerUser || 10,
+      tagsPerUser: options.tagsPerUser || 10,
       transactionsPerUser: options.transactionsPerUser || 365,
       instrumentsCount: options.instrumentsCount || 5,
       merchantsPerUser: options.merchantsPerUser || 8,
@@ -50,13 +41,13 @@ export class MockDataGenerator {
     this.companies = generateCompanies()
     this.users = generateUsers(this.options.usersCount, this.instruments)
     this.accounts = generateAccounts(this.users, this.instruments, this.companies, this.options.accountsPerUser)
-    this.categories = generateCategories(this.users, this.options.categoriesPerUser)
+    this.tags = generateTags(this.users, this.options.tagsPerUser)
     this.merchants = generateMerchants(this.users, this.options.merchantsPerUser)
     this.transactions = generateTransactions(
       this.users,
       this.accounts,
       this.merchants,
-      this.categories,
+      this.tags,
       this.options.transactionsPerUser,
     )
 
@@ -70,7 +61,7 @@ export class MockDataGenerator {
       reminder: [],
       reminderMarker: [],
       serverTimestamp: Date.now(),
-      tag: this.categories,
+      tag: this.tags,
       transaction: this.transactions,
       user: this.users,
     }

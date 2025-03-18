@@ -1,12 +1,12 @@
 import { faker } from '@faker-js/faker'
 
-import type { Category, User } from '../entities'
+import type { Tag, User } from '../entities'
 
 /**
- * Генерирует список категорий
+ * Генерирует список тэгов
  */
-export function generateCategories(users: User[], categoriesPerUser: number): Category[] {
-  const categories: Category[] = []
+export function generateTags(users: User[], tagsPerUser: number): Tag[] {
+  const tags: Tag[] = []
 
   // Используем реальные коды иконок из iconCodesMap.ts
   const iconCodes = [
@@ -62,16 +62,16 @@ export function generateCategories(users: User[], categoriesPerUser: number): Ca
   ]
 
   users.forEach((user) => {
-    // Создаем родительские категории
-    const parentCategories: Category[] = []
-    const parentCategoriesCount = Math.min(categoriesPerUser / 2, 5)
+    // Создаем родительские тэги
+    const parentTags: Tag[] = []
+    const parentTagsCount = Math.min(tagsPerUser / 2, 5)
 
-    for (let i = 0; i < parentCategoriesCount; i++) {
-      // 35% шанс того, что категория будет иметь цвет
+    for (let i = 0; i < parentTagsCount; i++) {
+      // 35% шанс того, что тэг будет иметь цвет
       const shouldHaveColor = faker.number.int({ min: 1, max: 100 }) <= 35
-      const categoryColor = shouldHaveColor ? faker.helpers.arrayElement(predefinedColors) : null
+      const tagColor = shouldHaveColor ? faker.helpers.arrayElement(predefinedColors) : null
 
-      const category: Category = {
+      const tag: Tag = {
         id: crypto.randomUUID(),
         user: user.id,
         changed: Date.now(),
@@ -79,7 +79,7 @@ export function generateCategories(users: User[], categoriesPerUser: number): Ca
         budgetIncome: faker.datatype.boolean(),
         budgetOutcome: faker.datatype.boolean(),
         required: faker.datatype.boolean(),
-        color: categoryColor,
+        color: tagColor,
         picture: null,
         title: faker.commerce.department(),
         showIncome: faker.datatype.boolean(),
@@ -88,35 +88,35 @@ export function generateCategories(users: User[], categoriesPerUser: number): Ca
         staticId: null,
       }
 
-      parentCategories.push(category)
-      categories.push(category)
+      parentTags.push(tag)
+      tags.push(tag)
     }
 
-    // Создаем подкатегории
-    for (let i = 0; i < categoriesPerUser - parentCategoriesCount; i++) {
-      const parentCategory = faker.helpers.arrayElement(parentCategories)
-      // Для подкатегорий также 35% шанс получить цвет, если у родительской категории нет цвета
-      const shouldHaveColor = parentCategory.color === null && faker.number.int({ min: 1, max: 100 }) <= 35
-      const categoryColor = shouldHaveColor ? faker.helpers.arrayElement(predefinedColors) : parentCategory.color
+    // Создаем под-тэг
+    for (let i = 0; i < tagsPerUser - parentTagsCount; i++) {
+      const parentTag = faker.helpers.arrayElement(parentTags)
+      // Для под-тэга также 35% шанс получить цвет, если у родительского тэга нет цвета
+      const shouldHaveColor = parentTag.color === null && faker.number.int({ min: 1, max: 100 }) <= 35
+      const tagColor = shouldHaveColor ? faker.helpers.arrayElement(predefinedColors) : parentTag.color
 
-      categories.push({
+      tags.push({
         id: crypto.randomUUID(),
         user: user.id,
         changed: Date.now(),
         icon: faker.helpers.arrayElement(iconCodes),
-        budgetIncome: parentCategory.budgetIncome,
-        budgetOutcome: parentCategory.budgetOutcome,
+        budgetIncome: parentTag.budgetIncome,
+        budgetOutcome: parentTag.budgetOutcome,
         required: faker.datatype.boolean(),
-        color: categoryColor,
+        color: tagColor,
         picture: null,
         title: faker.commerce.productName(),
-        showIncome: parentCategory.showIncome,
-        showOutcome: parentCategory.showOutcome,
-        parent: parentCategory.id,
+        showIncome: parentTag.showIncome,
+        showOutcome: parentTag.showOutcome,
+        parent: parentTag.id,
         staticId: null,
       })
     }
   })
 
-  return categories
+  return tags
 }
