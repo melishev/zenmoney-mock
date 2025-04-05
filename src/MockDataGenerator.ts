@@ -1,6 +1,17 @@
-import type { Account, Instrument, Merchant, Organization, Tag, Transaction, User, ZMDiffResponse } from './entities'
+import type {
+  Account,
+  Country,
+  Instrument,
+  Merchant,
+  Organization,
+  Tag,
+  Transaction,
+  User,
+  ZMDiffResponse,
+} from './entities'
 import { generateAccounts } from './generators/accounts'
 import { generateCompanies } from './generators/companies'
+import { generateCountries } from './generators/countries'
 import { generateInstruments } from './generators/instruments'
 import { generateMerchants } from './generators/merchants'
 import { generateTags } from './generators/tags'
@@ -20,6 +31,7 @@ export class MockDataGenerator {
   private instruments: Instrument[] = []
   private merchants: Merchant[] = []
   private companies: Organization[] = []
+  private countries: Country[] = []
 
   constructor(options: MockDataOptions = {}) {
     this.options = {
@@ -27,7 +39,6 @@ export class MockDataGenerator {
       accountsPerUser: options.accountsPerUser || 3,
       tagsPerUser: options.tagsPerUser || 10,
       transactionsPerUser: options.transactionsPerUser || 365,
-      instrumentsCount: options.instrumentsCount || 5,
       merchantsPerUser: options.merchantsPerUser || 8,
       companiesCount: options.companiesCount || 3,
     }
@@ -37,9 +48,10 @@ export class MockDataGenerator {
    * Генерирует все данные в формате API-ответа
    */
   public generate(): ZMDiffResponse {
-    this.instruments = generateInstruments(this.options.instrumentsCount)
+    this.instruments = generateInstruments()
     this.companies = generateCompanies()
-    this.users = generateUsers(this.options.usersCount, this.instruments)
+    this.countries = generateCountries()
+    this.users = generateUsers(this.options.usersCount, this.countries, this.instruments)
     this.accounts = generateAccounts(this.users, this.instruments, this.companies, this.options.accountsPerUser)
     this.tags = generateTags(this.users, this.options.tagsPerUser)
     this.merchants = generateMerchants(this.users, this.options.merchantsPerUser)
@@ -55,7 +67,7 @@ export class MockDataGenerator {
       account: this.accounts,
       budget: [],
       company: this.companies,
-      country: [],
+      country: this.countries,
       instrument: this.instruments,
       merchant: this.merchants,
       reminder: [],

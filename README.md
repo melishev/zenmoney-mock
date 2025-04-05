@@ -35,7 +35,6 @@ const generator = new MockDataGenerator({
   accountsPerUser: 4,
   tagsPerUser: 12,
   transactionsPerUser: 50,
-  instrumentsCount: 10,
   merchantsPerUser: 15
 });
 
@@ -58,7 +57,6 @@ generator.saveToJson('my-mock-data.json');
 | accountsPerUser | Количество счетов на пользователя | 3 |
 | tagsPerUser | Количество тэгов на пользователя | 10 |
 | transactionsPerUser | Количество транзакций на пользователя | 30 |
-| instrumentsCount | Количество валют | 5 |
 | merchantsPerUser | Количество получателей на пользователя | 8 |
 | companiesCount | Количество банков/компаний | 3 |
 

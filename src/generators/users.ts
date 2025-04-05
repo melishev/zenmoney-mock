@@ -1,17 +1,18 @@
 import { faker } from '@faker-js/faker'
 
-import type { Instrument, User } from '../entities'
+import type { Country, Instrument, User } from '../entities'
 
 /**
  * Генерирует список пользователей
  */
-export function generateUsers(count: number, instruments: Instrument[]): User[] {
+export function generateUsers(count: number, countries: Country[], instruments: Instrument[]): User[] {
   const users: User[] = []
 
   for (let i = 0; i < count; i++) {
+    const randomCountry = faker.helpers.arrayElement(countries)
     users.push({
       id: i + 1,
-      country: faker.number.int({ min: 1, max: 100 }),
+      country: randomCountry.id,
       login: faker.internet.username(),
       parent: null,
       countryCode: faker.location.countryCode(),

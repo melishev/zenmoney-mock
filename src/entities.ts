@@ -122,11 +122,18 @@ export interface Transaction {
   reminderMarker: string | null
 }
 
+export interface Country {
+  id: number
+  title: string
+  currency: number
+  domain: string
+}
+
 export interface ZMDiffResponse {
   account: Account[]
   budget: any[]
   company: Organization[]
-  country: any[]
+  country: Country[]
   instrument: Instrument[]
   merchant: Merchant[]
   reminder: any[]

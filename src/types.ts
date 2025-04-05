@@ -3,7 +3,6 @@ export interface MockDataOptions {
   accountsPerUser?: number
   tagsPerUser?: number
   transactionsPerUser?: number
-  instrumentsCount?: number
   merchantsPerUser?: number
   companiesCount?: number
 }
