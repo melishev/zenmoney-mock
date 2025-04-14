@@ -42,13 +42,6 @@ const generator = new MockDataGenerator({
 const mockData = generator.generate();
 ```
 
-### Сохранение в JSON (только в браузере)
-
-```typescript
-const generator = new MockDataGenerator();
-generator.saveToJson('my-mock-data.json');
-```
-
 ## Доступные настройки
 
 | Параметр | Описание | Значение по умолчанию |

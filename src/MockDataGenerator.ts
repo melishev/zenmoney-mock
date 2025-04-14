@@ -78,21 +78,4 @@ export class MockDataGenerator {
       user: this.users,
     }
   }
-
-  /**
-   * Сохраняет сгенерированные данные в JSON файл
-   */
-  public saveToJson(fileName: string = 'mockData.json'): void {
-    // Если используется в браузере
-    if (typeof window !== 'undefined') {
-      const dataStr = JSON.stringify(this.generate(), null, 2)
-      const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr)
-
-      const linkElement = document.createElement('a')
-      linkElement.setAttribute('href', dataUri)
-      linkElement.setAttribute('download', fileName)
-      linkElement.click()
-    }
-    // Если используется в Node.js среде, нужно добавить соответствующую логику с fs.writeFile
-  }
 }
