@@ -27,7 +27,7 @@ export interface Account {
   title: string
   inBalance: boolean
   creditLimit: number
-  startBalance: number
+  startBalance: number | null
   balance: number
   company: number | null
   archive: boolean
